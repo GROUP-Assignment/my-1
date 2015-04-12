@@ -1,0 +1,13 @@
+{% extends "build.html" %}
+{% block content %}
+  
+<form method="POST">
+	<div class="av">Enter the numbers:<input type="text" name="first" value=""><br>
+	<input type="submit" value="Submit">
+    {% if result %}
+    <p>
+	    <label name='result'><b><br /><u><em>Answer is: {{ result }}</em></u></b></label>
+    </p></div>
+    {% endif %}
+</form>
+{% endblock %}
